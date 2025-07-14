@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import APOD from './components/APOD';
 import ISSLocation from './components/ISSLocation';
+import MoonPhase from './components/MoonPhase';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <main>
         <APOD />
         <ISSLocation />
+        <MoonPhase />
       </main>
     </div>
   );

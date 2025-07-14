@@ -36,6 +36,11 @@
 *   **Frontend ISS Location Component:** Created `frontend/src/components/ISSLocation.jsx` to fetch and display ISS location data.
 *   **Frontend Integration:** Updated `frontend/src/App.jsx` to use the `ISSLocation` component.
 
+### Phase 4: Moon Phase Feature Implementation
+
+*   **Frontend Moon Phase Component:** Created `frontend/src/components/MoonPhase.jsx` to calculate and display the current moon phase.
+*   **Frontend Integration:** Updated `frontend/src/App.jsx` to use the `MoonPhase` component.
+
 ### Next Steps:
 
 *   Implement API endpoints in the FastAPI backend for other NASA APIs.
