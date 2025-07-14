@@ -26,6 +26,16 @@ async def get_apod():
     except requests.exceptions.RequestException as e:
         raise HTTPException(status_code=500, detail=f"Error fetching APOD: {e}")
 
+@app.get("/api/iss-location")
+async def get_iss_location():
+    iss_url = "http://api.open-notify.org/iss-now.json"
+    try:
+        response = requests.get(iss_url)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        raise HTTPException(status_code=500, detail=f"Error fetching ISS location: {e}")
+
 @app.get("/api/test")
 async def test_api():
     if not NASA_API_KEY:

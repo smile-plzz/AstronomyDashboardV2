@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import APOD from './components/APOD';
+import ISSLocation from './components/ISSLocation';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </header>
       <main>
         <APOD />
+        <ISSLocation />
       </main>
     </div>
   );

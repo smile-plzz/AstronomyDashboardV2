@@ -30,6 +30,12 @@
 *   **Styling:** Updated `frontend/src/index.css` and `frontend/src/App.css` with CSS variables for neumorphic design and dark mode, and applied these styles to the main layout and components.
 *   **Dark Mode Toggle:** Implemented dark mode toggle functionality in `frontend/src/App.jsx` with local storage persistence.
 
+### Phase 3: ISS Location Feature Implementation
+
+*   **Backend ISS Location Endpoint:** Added `/api/iss-location` endpoint to `backend/main.py` to fetch ISS location data from Open-Notify API.
+*   **Frontend ISS Location Component:** Created `frontend/src/components/ISSLocation.jsx` to fetch and display ISS location data.
+*   **Frontend Integration:** Updated `frontend/src/App.jsx` to use the `ISSLocation` component.
+
 ### Next Steps:
 
 *   Implement API endpoints in the FastAPI backend for other NASA APIs.
