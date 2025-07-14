@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-header {
+  background-color: var(--light-card-bg);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--light-text);
+  box-shadow: 8px 8px 16px var(--light-shadow-1), -8px -8px 16px var(--light-shadow-2);
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header h1 {
+  color: var(--light-text);
+}
+
+body.dark-mode .App-header {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text);
+  box-shadow: 8px 8px 16px var(--dark-shadow-1), -8px -8px 16px var(--dark-shadow-2);
+}
+
+body.dark-mode .App-header h1 {
+  color: var(--dark-text);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: var(--light-card-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px var(--light-shadow-1), -8px -8px 16px var(--light-shadow-2);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode section {
+  background-color: var(--dark-card-bg);
+  box-shadow: 8px 8px 16px var(--dark-shadow-1), -8px -8px 16px var(--dark-shadow-2);
+}
+
+section h2 {
+  color: var(--light-primary);
+  margin-bottom: 15px;
+}
+
+body.dark-mode section h2 {
+  color: var(--dark-primary);
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px var(--light-shadow-1), -4px -4px 8px var(--light-shadow-2);
+}
+
+body.dark-mode img {
+  box-shadow: 4px 4px 8px var(--dark-shadow-1), -4px -4px 8px var(--dark-shadow-2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
   }
-  to {
-    transform: rotate(360deg);
+
+  section {
+    padding: 15px;
+    margin-bottom: 15px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
