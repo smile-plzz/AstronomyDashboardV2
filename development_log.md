@@ -41,6 +41,11 @@
 *   **Frontend Moon Phase Component:** Created `frontend/src/components/MoonPhase.jsx` to calculate and display the current moon phase.
 *   **Frontend Integration:** Updated `frontend/src/App.jsx` to use the `MoonPhase` component.
 
+### Phase 5: User Location Feature Implementation
+
+*   **Frontend User Location Component:** Created `frontend/src/components/UserLocation.jsx` to detect user's geographical coordinates (with fallback for manual input) and save to local storage.
+*   **Frontend Integration:** Updated `frontend/src/App.jsx` to use the `UserLocation` component.
+
 ### Next Steps:
 
 *   Implement API endpoints in the FastAPI backend for other NASA APIs.
