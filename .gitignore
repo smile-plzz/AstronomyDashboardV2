@@ -1,0 +1,15 @@
+# Root .gitignore for AstronomyDashboardV2
+
+# Frontend (Vite/React)
+/frontend/dist
+/frontend/node_modules
+
+# Backend (FastAPI/Python)
+/backend/venv
+/backend/__pycache__
+/backend/.env
+
+# General
+.DS_Store
+.env
+.vscode/
